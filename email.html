@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<title>Email</title>
+<html lang="en">
+
+	<head>
+		<!-- Code to include Bootstrap -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<!-- End Bootstrap code -->
+	</head>
+
+<script>
+function myFunction() {
+    var x;
+    if (confirm("Your Email has been sent!") == true) {
+        x = "You pressed OK!";
+    } else {
+        x = "You pressed Cancel!";
+    }
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+<style>
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    resize: none;
+}
+body {
+	background-image:
+url("http://www.designshock.com/wp-content/uploads/2015/02/poison2.jpg");
+
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: ;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+</style>
+<body>
+
+<ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="profile.html">Profile</a></li>
+  <li><a href="resources.html">Resources</a></li>
+  <li><a href="contact.html">Contact List</a></li>
+  <li><a href="email.html">Send an Email</a></li>
+  <li><a href="https://www.google.com/calendar">Calender</a></li>
+  <li><a href="map.html">Map</a></li>
+  <li><a href="reminder.html">Reminders</a></li>
+	
+</ul>
+
+
+<div style="margin-left:35%;padding:1px 30px;height:1200px;">
+<div data-role="page">
+  <div data-role="header">
+<br><br>
+<div class = "container">
+  </div>
+<h1>Send An Email...</h1><br><br>
+<div data-role="main" class="ui-content">
+ <form method="post" >
+      <div class="ui-field-contain">
+        <label for="email">From:</label>
+        <input type="email" name="email" id="email" placeholder="insert email..">
+		
+
+        <label for="email">  To:  </label>
+   
+		
+   <select>
+  <option value="volvo">Contacts</option>
+  <option value="saab">Jenni Munoz</option>
+  <option value="opel">Lilly Xie</option>
+  <option value="audi">Alexa Mendoza</option>
+</select>
+<br><br>
+		
+		 <div data-role="main" class="ui-content">
+<form method="post" >
+     <div class="ui-field-contain">
+        <label for="fullname">Email:</label>
+		<textarea></textarea>
+</form>
+      </div><br><br>
+      <center><button onclick="myFunction()">Submit</button></center> 
+ </form>
+ </div>
+</div>
+<br><br><br><br><br>
+<iframe width=450 height='700px' src="http://www.anonymousfeedback.net/send-anonymous-email/embed/?to_name=Seek&to_email=seek.com&use_from=1" style='border:0px;'></iframe><br/><div style='margin:3px;padding-left:60px'>Powered by <a target='_blank' href="http://www.anonymousfeedback.net/"></a></div> 
+</body>
+</html>
+

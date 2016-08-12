@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Code to include Bootstrap -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- End Bootstrap code -->
+</head>
+<style>
+h1{
+	color: white;
+background-color: black;
+}
+p{
+	color: black;
+	font-size: 150%;
+}
+</style>
+<body>
+<div class = "container">
+<!--LOGO-->
+ <img src="seek.png" alt="Mountain View" style="width:254px;height:208px;">
+ <!--HEADER-->
+			<center><h1><i>Take This Survey</i></h1></center><br><br>
+<div data-role="main" class="ui-content">
+<form method="post" action="demoform.asp">
+<div class="ui-field-contain">
+<!--QUESTIONS START HERE-->
+		<p><label for="who">Are you a loved one who wants to try and help someone you may know , or are you the victim?:</label></p>
+			<p><input type="text" name="who" id="who"></p>
+		<p><label for="major">What is your major?:</label></p>
+			<p><input type="text" name="major" id="major"></p>
+		<p><label for="reason">Why are you using this application?:</label></p>
+			<p><input type="text" name="reason" id="reason"></p>
+		<p><label for="mental illness"> What is your mental illness, if applies?:</label></p>
+			<p><input type="text" name="mental illness" id="mental illness"></p>
+		<p><label for="medication">Are you on medication, if applies?:</label></p>
+			<p><input type="text" name="medication" id="medication"></p>
+		<p><label for="stressors">What are your stressors?:</label></p>
+			<p><input type="text" name="stressors" id="stressors"></p>
+		<p><label for="thoughts">Have you been having suicidal thoughts?:</label></p>
+			<input type="text" name="thoughts" id="thoughts"></p>
+		<p><label for="thoughts2">Do you know someone who has been having suicidal thoughts or tendencies?:</label></p>
+			<p><input type="text" name="thoughts2" id="thoughts2"></p>
+<!--QUESTIONS END HERE-->	
+      <a class="btn btn-primary" href="home.html" role="button">Submit</a>	  
+</form>
+</div>
+</div>
+</body>
+</html>
